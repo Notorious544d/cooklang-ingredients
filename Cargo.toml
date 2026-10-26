@@ -1,0 +1,11 @@
+[package]
+name = "cooklang-ingredients"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+cooklang = { version = "0.19.0", default-features = false, features = ["aisle", "bundled_units"] }
+indexmap = { version = "2", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
